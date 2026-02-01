@@ -27,5 +27,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and deploy with OpenNext
-        run: npm run deploy
+      - name: Build OpenNext bundle
+        run: npx opennextjs-cloudflare build
+
+      - name: Deploy to Cloudflare Workers
+        run: WRANGLER_LOG=debug npx wrangler deploy
+
+      - name: Print Wrangler logs on failure
+        if: failure()
+        run: |
+          echo "Wrangler logs:"
+          ls -la ~/.config/.wrangler/logs || true
+          tail -n 200 ~/.config/.wrangler/logs/wrangler-*.log || true
