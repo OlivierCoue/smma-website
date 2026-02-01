@@ -1,0 +1,80 @@
+.section {
+  background: var(--color-background);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+}
+
+.titleIcon {
+  width: 26px;
+  height: 26px;
+}
+
+.titleIconMirrored {
+  transform: scaleX(-1);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.imageMain,
+.imageSide {
+  overflow: hidden;
+}
+
+.imageMain :global(img),
+.imageSide :global(img) {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #6f5a48;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .imageMain {
+    order: 1;
+  }
+}
