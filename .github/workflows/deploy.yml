@@ -22,25 +22,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Next.js
-        run: npm run build
-
-      - name: Build for Cloudflare Pages
-        run: npm run pages:build
-
-      - name: Install wrangler
-        run: npm install -g wrangler
-
-      - name: Deploy Cloudflare Page
-        run: |
-          if ! npx wrangler pages project list | grep -qw "smma-website"; then
-            npx wrangler pages project create smma-website --production-branch=main
-          fi
-
-          npx wrangler pages deploy .vercel/output/static \
-            --project-name=smma-website \
-            --branch=${{ github.ref_name }}
+      - name: Build and deploy with OpenNext
+        run: npm run deploy
