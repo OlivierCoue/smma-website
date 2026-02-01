@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  background: #6f7868;
+  color: #f4efe6;
+  height: 280px;
+  padding: 64px 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconWrap {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #7f6651;
+  display: grid;
+  place-items: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
