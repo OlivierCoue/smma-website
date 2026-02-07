@@ -71,6 +71,12 @@ select {
   gap: 200px;
 }
 
+.section-stack-no-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .section {
   padding: 72px 0;
 }

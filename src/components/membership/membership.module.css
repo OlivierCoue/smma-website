@@ -1,0 +1,112 @@
+.section {
+  background: #78836f;
+  padding: 56px 0 66px;
+}
+
+.inner {
+  color: var(--color-text);
+}
+
+.title {
+  margin: 0;
+  padding-inline: max(
+    var(--container-padding),
+    calc((100vw - var(--container-width)) / 2 + var(--container-padding))
+  );
+  text-transform: uppercase;
+  font-size: clamp(2.1rem, 5.6vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.logoRow {
+  margin-top: 42px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoColumn {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoColumnDouble {
+  gap: 28px;
+}
+
+.logoColumn :global(img) {
+  width: 100%;
+  height: auto;
+}
+
+.logoFamo {
+  max-width: 150px;
+}
+
+.logoDeuxSevres {
+  max-width: 240px;
+}
+
+.logoAscomycete {
+  min-width: 320px;
+  max-width: 360px;
+}
+
+.logoFongiFrance {
+  max-width: 245px;
+}
+
+.logoSmf {
+  max-width: 170px;
+}
+
+.logoReNature {
+  max-width: 170px;
+}
+
+@media (max-width: 1100px) {
+  .logoRow {
+    flex-wrap: wrap;
+    gap: 28px 20px;
+  }
+
+  .logoColumn {
+    flex: 1 1 calc(33.333% - 20px);
+    min-height: 0;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .logoColumnDouble {
+    justify-content: center;
+  }
+
+  .logoAscomycete {
+    min-width: 0;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 44px 0 52px;
+  }
+
+  .logoRow {
+    gap: 20px 16px;
+  }
+
+  .logoColumn {
+    flex: 1 1 calc(50% - 16px);
+  }
+
+  .logoColumn:last-child {
+    flex-basis: 100%;
+  }
+}

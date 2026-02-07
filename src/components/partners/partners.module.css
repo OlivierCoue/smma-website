@@ -1,0 +1,45 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 72px 0 88px;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 22, 19, 0.58);
+  z-index: -1;
+}
+
+.inner {
+  position: relative;
+}
+
+.sectionTitle {
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 64px 0 72px;
+  }
+}

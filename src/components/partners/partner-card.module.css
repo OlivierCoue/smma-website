@@ -1,0 +1,57 @@
+.card {
+  min-height: 252px;
+  background: rgba(119, 129, 111, 0.9);
+  color: #f2ece2;
+  padding: 24px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.logoWrap {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.logoWrapMultiple {
+  gap: 16px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-height: 88px;
+  max-width: 240px;
+}
+
+.body {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .card {
+    min-height: 0;
+    padding: 20px 20px 24px;
+  }
+
+  .logoWrap {
+    min-height: 76px;
+  }
+
+  .logo {
+    max-height: 74px;
+    max-width: 214px;
+  }
+
+  .body {
+    font-size: 0.98rem;
+  }
+}
