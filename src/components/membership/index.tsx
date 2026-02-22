@@ -19,24 +19,36 @@ export default function Membership() {
         <h2 className={styles.title}>{t("membership.title")}</h2>
         <div className={styles.logoRow}>
           <div className={styles.logoColumn}>
-            <Image className={styles.logoFamo} src={famoLogo} alt="" />
+            <a href="https://www.famo.fr/" target="_blank" rel="noopener noreferrer">
+              <Image className={styles.logoFamo} src={famoLogo} alt="" />
+            </a>
           </div>
           <div className={styles.logoColumn}>
-            <Image className={styles.logoSmf} src={societeMycologiqueFranceLogo} alt="" />
+            <a href="https://www.mycofrance.fr/" target="_blank" rel="noopener noreferrer">
+              <Image className={styles.logoSmf} src={societeMycologiqueFranceLogo} alt="" />
+            </a>
           </div>
           <div className={styles.logoColumn}>
-            <Image className={styles.logoReNature} src={reNatureLogo} alt="" />
+            <a href="https://www.renatureenvironnement.fr/" target="_blank" rel="noopener noreferrer">
+              <Image className={styles.logoReNature} src={reNatureLogo} alt="" />
+            </a>
           </div>
           <div className={`${styles.logoColumn} ${styles.logoColumnDouble}`}>
-            <Image
-              className={styles.logoDeuxSevres}
-              src={deuxSevresNatureEnvironnementLogo}
-              alt=""
-            />
-            <Image className={styles.logoFongiFrance} src={fongiFranceLogo} alt="" />
+            <a href="https://dsne.org/" target="_blank" rel="noopener noreferrer">
+              <Image
+                className={styles.logoDeuxSevres}
+                src={deuxSevresNatureEnvironnementLogo}
+                alt=""
+              />
+            </a>
+            <a href="https://fongibase.fongifrance.fr/" target="_blank" rel="noopener noreferrer">
+              <Image className={styles.logoFongiFrance} src={fongiFranceLogo} alt="" />
+            </a>
           </div>
           <div className={styles.logoColumn}>
-            <Image className={styles.logoAscomycete} src={ascomyceteLogo} alt="" />
+            <a href="https://ascomycete.org/" target="_blank" rel="noopener noreferrer">
+              <Image className={styles.logoAscomycete} src={ascomyceteLogo} alt="" />
+            </a>
           </div>
         </div>
       </div>

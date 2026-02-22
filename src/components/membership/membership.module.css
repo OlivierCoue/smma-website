@@ -98,15 +98,19 @@
     padding: 44px 0 52px;
   }
 
+  .title {
+    text-align: center;
+  }
+
   .logoRow {
-    gap: 20px 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
   }
 
   .logoColumn {
-    flex: 1 1 calc(50% - 16px);
-  }
-
-  .logoColumn:last-child {
-    flex-basis: 100%;
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 0;
   }
 }

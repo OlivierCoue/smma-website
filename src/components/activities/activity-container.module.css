@@ -34,3 +34,10 @@
   line-height: 1.5;
   padding-bottom: 16px;
 }
+
+@media (max-width: 640px) {
+  .card {
+    height: 180px;
+    padding: 56px 20px 24px;
+  }
+}
