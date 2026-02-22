@@ -110,7 +110,11 @@
 
 @media (max-width: 700px) {
   .viewport {
-    height: 52vh;
+    height: 26vh;
+  }
+
+  .dots {
+    bottom: 48px;
   }
 
   .contentWrap {

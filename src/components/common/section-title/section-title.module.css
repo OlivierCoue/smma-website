@@ -25,3 +25,9 @@
 .titleIconMirrored {
   transform: scaleX(-1);
 }
+
+@media (max-width: 640px) {
+  .titleRow {
+    margin-bottom: 20px;
+  }
+}

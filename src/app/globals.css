@@ -155,3 +155,15 @@ select {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+@media (max-width: 900px) {
+  .section-stack {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-stack {
+    gap: 80px;
+  }
+}

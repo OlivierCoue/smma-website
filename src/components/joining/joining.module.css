@@ -215,6 +215,14 @@
     padding: 70px 0 76px;
   }
 
+  .infoCard {
+    padding: 18px 22px;
+  }
+
+  .formCard {
+    padding: 22px 24px 24px;
+  }
+
   .form {
     grid-template-columns: 1fr;
   }

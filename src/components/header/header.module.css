@@ -111,21 +111,113 @@
   filter: brightness(1.05);
 }
 
+.headerCtaMobile,
+.mobileMenuButton,
+.mobileMenuPanel {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .headerInner {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 12px 10px 0 20px;
+    min-height: 54px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    gap: 0;
+  }
+
+  .brandMark {
+    display: block;
+  }
+
+  .brandName {
+    display: none;
   }
 
   .headerNav {
-    gap: 12px;
-  }
-
-  .headerCta {
-    margin-left: 0;
-  }
-
-  .navSep {
     display: none;
+  }
+
+  .headerCtaMobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--color-secondary);
+    border: 1px solid rgba(236, 233, 224, 0.35);
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1;
+    opacity: 1;
+  }
+
+  .mobileMenuButton {
+    display: inline-grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .mobileMenuButton :global(img) {
+    width: 28px;
+    height: 28px;
+    display: block;
+  }
+
+  .mobileMenuPanel {
+    flex-basis: 100%;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 260ms ease, opacity 180ms ease;
+    background: var(--color-primary);
+    border-top: 1px solid rgba(236, 233, 224, 0.18);
+    margin-top: 12px;
+  }
+
+  .mobileMenuPanelOpen {
+    max-height: 520px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 0 10px;
+  }
+
+  .mobileNav a {
+    color: var(--color-text);
+    opacity: 0.92;
+  }
+
+  .mobileLangSwitch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 0 14px;
   }
 }
