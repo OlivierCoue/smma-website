@@ -8,7 +8,7 @@ import galleryImage1 from "@/assets/images/gallery/gallery-1.jpg";
 import galleryImage2 from "@/assets/images/gallery/gallery-2.jpg";
 
 const GALLERY_URL =
-  "https://drive.google.com/drive/folders/11bgXE8QiVgH9UjHjbaD_feJ8g9yVYMNI";
+  "https://drive.google.com/drive/folders/1hixW6yD6ZRhWKkdofgksi7p7SlpSan1K?usp=sharing";
 
 export default function Gallery() {
   const t = useT();
@@ -29,6 +29,9 @@ export default function Gallery() {
               {t("gallery.body.beforeBold")}
               <strong>{t("gallery.body.bold")}</strong>
               {t("gallery.body.afterBold")}
+              <strong>{t("gallery.body.bold2")}</strong>
+              {t("gallery.body.afterBold2")}
+              <strong>{t("gallery.body.bold3")}</strong>
             </p>
             <a href={GALLERY_URL} target="_blank" rel="noreferrer" className={styles.button}>
               {t("gallery.cta")}

@@ -53,7 +53,7 @@ export default function useJoiningForm() {
       "Adresse postale: " + (form.postalAddress || "-"),
       "Adresse mail: " + (form.email || "-"),
       "Numéro de téléphone: " + (form.phone || "-"),
-      "Je souhaite m'inscrire: " + (form.wantsToJoin ? "Oui" : "Non"),
+      "Je souhaite m'inscrire au forum: " + (form.wantsToJoin ? "Oui" : "Non"),
       "Mode de règlement: " + (form.paymentMethod === "cheque" ? "Chèque" : "Virement"),
     ].join("\n");
 

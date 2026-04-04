@@ -9,9 +9,11 @@ import image1 from "@/assets/images/carousel/carousel-1.png";
 import image2 from "@/assets/images/carousel/carousel-2.png";
 import image3 from "@/assets/images/carousel/carousel-3.png";
 import image4 from "@/assets/images/carousel/carousel-4.png";
+import image5 from "@/assets/images/carousel/carousel-5.png";
+import image6 from "@/assets/images/carousel/carousel-6.png";
 import maskImage from "@/assets/images/carousel/mask-carousel.png";
 
-const images = [image1, image2, image3, image4] as const;
+const images = [image1, image2, image3, image4, image5, image6] as const;
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);

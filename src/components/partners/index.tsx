@@ -11,6 +11,7 @@ import reNatureLogo from "@/assets/images/partners/re-nature.png";
 import cbnLogo from "@/assets/images/partners/cbn.png";
 import praillesLogo from "@/assets/images/partners/prailles.png";
 import marignyLogo from "@/assets/images/partners/marigny.png";
+import createurDeForetLogo from "@/assets/images/partners/createurdeforet.png";
 
 export default function Partners() {
   const t = useT();
@@ -39,6 +40,10 @@ export default function Partners() {
           <PartnerCard
             images={[praillesLogo.src, marignyLogo.src]}
             text={t("partners.communes.body")}
+          />
+          <PartnerCard
+            images={[createurDeForetLogo.src]}
+            text={t("partners.createurdeforet.body")}
           />
         </div>
       </div>
