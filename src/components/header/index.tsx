@@ -31,7 +31,13 @@ export default function Header() {
     <header className={styles.siteHeader}>
       <div className={styles.headerInner}>
         <div className={styles.brand}>
-          <span className={styles.brandMark} aria-hidden="true" />
+          <Image
+            className={styles.brandLogo}
+            src="/smma-logo.png"
+            alt="Logo SMMA"
+            width={48}
+            height={48}
+          />
           <span className={styles.brandName}>{t("header.brand")}</span>
         </div>
         <a className={styles.headerCtaMobile} href="#adherer">

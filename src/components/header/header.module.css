@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 16px 64px;
+  padding: 12px 64px;
 }
 
 .brand {
@@ -20,12 +20,10 @@
   letter-spacing: 0.04em;
 }
 
-.brandMark {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--color-secondary);
-  display: inline-block;
+.brandLogo {
+  width: auto;
+  height: 48px;
+  display: block;
 }
 
 .brandName {
@@ -131,13 +129,11 @@
   .brand {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
+    justify-content: flex-start;
     gap: 0;
   }
 
-  .brandMark {
+  .brandLogo {
     display: block;
   }
 
