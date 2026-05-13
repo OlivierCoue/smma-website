@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 12px 64px;
+  padding: 6px 64px;
 }
 
 .brand {
@@ -22,12 +22,12 @@
 
 .brandLogo {
   width: auto;
-  height: 48px;
+  height: 82px;
   display: block;
 }
 
 .brandName {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .headerNav {
